@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Parallax - Animation </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="background">
+        <div id="overlay">
+            <nav>
+                <h3>ready.co</h3>
+                <button>Sign in</button>
+            </nav>
+            <h1>Fly High</h1>
+            <footer>
+                <div id="left">
+                    <h2><span id="big">09</span>/10</h2>
+                </div>
+                <div id="right">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitch</a>
+                </div>
+            </footer>
+        </div>
+        <img data-depth=".08" class="parallax" id="sky" src="./assets/sky.png" alt="sky" >
+        <img data-depth=".1" class="parallax" id="mountain" src="./assets/mountain1.png" alt="mountain1">
+        <img data-depth=".2" class="parallax" id="man" src="./assets/mountain2+man.png" alt="mountain2">
+        <div id="gradient">
+        </div>
+    </div>
+    <div id="content">
+        <div id="elements">
+            <div class="block">
+                <div class="img" id="img1" ></div>
+                <h5>Air</h5>
+            </div>
+            <div class="block">
+                <div class="img" id="img2" ></div>
+                <h5>Water</h5>
+            </div>
+            <div class="block">
+                <div class="img" id="img3" ></div>
+                <h5>Land</h5>
+            </div>
+            <div class="block">
+                <div class="img" id="img4" ></div>
+                <h5>Space</h5>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure itaque vitae doloribus, saepe error ipsum, corrupti possimus sapiente, omnis nemo vero asperiores consequatur repellat! Nulla voluptate tenetur quod. Dolor perspiciatis sapiente accusantium corporis, error nulla.</p>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
